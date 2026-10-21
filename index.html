@@ -241,6 +241,17 @@ body.motion-paused .hero-lines,body.motion-paused .abstract-assembly,body.motion
 @media (max-width:1100px){.value-flow{gap:18px}.value-stage{padding-left:20px;padding-right:20px}.stage-foot{letter-spacing:.07em}}
 @media (max-width:760px){.value-stage{min-height:0;padding:22px 22px 20px}.stage-foot{margin-top:22px;position:static}}
 
+.footer-legal{padding:18px 0 26px;border-top:1px solid rgba(255,255,255,.09)}.footer-legal p{max-width:900px;margin:0;color:rgba(255,255,255,.48);font-size:clamp(11px,1.05vw,12px);line-height:1.75;letter-spacing:.01em}
+/* Footer con mayor respiración, sin alterar el contenido */
+.footer{padding:0 0 38px}
+.footer-inner{display:grid;grid-template-columns:minmax(220px,1.5fr) minmax(180px,1fr) minmax(180px,1fr) auto;align-items:center;column-gap:clamp(22px,3.5vw,64px);row-gap:20px;padding-top:49px;padding-bottom:43px}
+.footer-name{font-size:clamp(11px,1vw,13px);line-height:1.55;letter-spacing:.025em}
+.footer-meta{font-size:clamp(9px,.78vw,11px);line-height:1.7;letter-spacing:.08em}
+.back-top{white-space:nowrap;font-size:10px}
+.footer-legal{padding:30px 0 12px;border-top:1px solid rgba(255,255,255,.09)}
+.footer-legal p{max-width:1050px;font-size:clamp(12px,1vw,13px);line-height:1.9;letter-spacing:.012em}
+@media(max-width:950px){.footer-inner{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 35px;padding-top:42px;padding-bottom:36px}.footer-inner .footer-meta{grid-column:auto}.footer-inner .back-top{grid-column:2;grid-row:2;justify-self:end;align-self:center}.footer-legal{padding-top:26px}}
+@media(max-width:520px){.footer{padding-bottom:30px}.footer-inner{grid-template-columns:1fr auto;gap:17px 16px;padding-top:36px;padding-bottom:31px}.footer-inner .footer-name{grid-column:1/-1}.footer-inner .footer-meta{grid-column:1;line-height:1.6}.footer-inner .back-top{grid-column:2;grid-row:2/4;align-self:center}.footer-legal{padding-top:23px}.footer-legal p{font-size:12px;line-height:1.85}}
 </style>
 <script src="https://unpkg.com/lucide@latest"></script>
 </head>
@@ -374,7 +385,7 @@ body.motion-paused .hero-lines,body.motion-paused .abstract-assembly,body.motion
   </div>
 </div>
 
-<footer class="footer"><div class="wrap footer-inner"><span class="footer-name">JOSÉ LUIS ZULUAGA GIRALDO</span><span class="footer-meta">Arte · Diseño · Narrativa</span><span class="footer-meta">© <span id="year">2026</span> José Luis Zuluaga</span><a class="back-top" href="#inicio"><span>Volver arriba</span><i data-lucide="arrow-up" aria-hidden="true"></i></a></div></footer>
+<footer class="footer"><div class="wrap footer-inner"><span class="footer-name">JOSÉ LUIS ZULUAGA GIRALDO</span><span class="footer-meta">Arte · Diseño · Narrativa</span><span class="footer-meta">© <span id="year">2026</span> José Luis Zuluaga</span><a class="back-top" href="#inicio"><span>Volver arriba</span><i data-lucide="arrow-up" aria-hidden="true"></i></a></div><div class="wrap footer-legal"><p>Este portafolio puede incluir piezas de carácter conceptual que referencian personajes con derechos de autor de terceros. Dichas piezas tienen fines exclusivamente demostrativos y educativos; el autor no ha trabajado oficialmente con dichas marcas ni ha obtenido beneficio económico a partir de ellas.</p></div></footer>
 <script>
 (function(){
   const body=document.body;
